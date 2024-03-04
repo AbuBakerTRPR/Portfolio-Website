@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{  
+  background: #131e22;
+  position: relative;
+}::-webkit-scrollbar {
+  width: 9px;
+}
+
+#root{
+  position: relative;
+}
+
+::-webkit-scrollbar-track {
+  background: radial-gradient(
+    circle,
+    rgb(72, 72, 72) 10%,
+    rgb(31, 31, 31) 53%
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c45908;
+  border-radius: 8px;
+}
+
+/* Styling for Firefox */
+::-moz-scrollbar {
+  width: 9px;
+}
+
+::-moz-scrollbar-track {
+  background: radial-gradient(
+    circle,
+    rgba(246, 246, 249, 0) 10%,
+    rgba(210, 210, 210, 0) 53%
+  );
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #000000; /* Change this to your desired color */
+}
+
+/* Hiding the scrollbar on mobile */
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-moz-scrollbar {
+    display: none;
+  }
+}
+
+
+
+.gradient-1 {
+  background: #2d3a3f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    #2d3a3f,
+    #293c43,
+    #141e22
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    #2d3a3f,
+    #293c43,
+    #202e34e3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gradient-3 {
+  background: #2d3a3f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    #2d3a3f,
+    #293c43,
+    #141e22
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2d3a3f,
+    #293c43,
+    #202e34e3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gradient-2 {
+  background: #2d3a3f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    #2d3a3f,
+    #293c43,
+    #141e22
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #394a50d5,
+    #2f4248,
+    #202e34e3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.backShadow{
+  filter: drop-shadow(#00000080 0.5rem 0.5rem 1rem);
+}
+.linear__text__gradient {
+  background: linear-gradient(to left bottom, white 35%, #5d5d5d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
